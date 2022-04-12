@@ -65,6 +65,10 @@ title('Gráfico do sistema a partir do impulso')
 xlabel('t')
 ylabel('y_{out}')
 
+%% Mapa de polos e zeros
+figure
+pzmap(Y_tf)
+
 %% Numérico %%
 Nw = 30;            % Periodo
 n = 0:Nw-1;
