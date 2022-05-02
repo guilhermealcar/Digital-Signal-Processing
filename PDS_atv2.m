@@ -1,5 +1,4 @@
 % Série de Fourier
-
 close all
 clc
 clear
