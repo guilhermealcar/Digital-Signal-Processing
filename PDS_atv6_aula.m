@@ -43,3 +43,11 @@ grid on
 title('Fase - arg\{X[k]\}')
 xlabel('\Omega')
 ylabel('arg\{X[k]\}')
+
+%%
+y1 = fft(x);
+y2 = x*dftmtx(N);
+y3 = F*x';
+
+norm(y1-y2)
+norm(y1-y3)
