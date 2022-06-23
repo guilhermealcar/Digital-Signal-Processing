@@ -74,7 +74,7 @@ xlabel('Frequency (Hz)')
 ylabel('Magnitude')
 
 % Recorded audio file filtered
-Y_filtrado = filter(Hdveg1, Y);
+Y_filtrado = filter(Hdveg1, Y); % obj Hdveg1
 Y_filtradoTransform = abs(fft(Y_filtrado));
 
 Fveg2 = abs(fft(Y_filtrado));
@@ -95,7 +95,7 @@ xlabel('Frequency (Hz)')
 ylabel('Magnitude')
 
 % Recorded audio file filtered - 2
-Y_filtrado2 = filter(Hdveg2, Y_filtrado);
+Y_filtrado2 = filter(Hdveg2, Y_filtrado); % obj Hdveg2
 Y_filtradoTransform2 = abs(fft(Y_filtrado2));
 
 Fveg3 = abs(fft(Y_filtrado2));
